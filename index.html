@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Túi Xách MiKa</title>
+
+    <link
+      rel="stylesheet"
+      href="./assets//fonts/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/slide.css" />
+    <link rel="stylesheet" href="./assets/css/product.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="http://127.0.0.1:5500/" class="header__logo">
+          <img src="./assets//img/logo.png" alt="" />
+        </a>
+        <div class="header__nav">
+          <ul class="header__nav-list header__nav-pc">
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/hang-moi.html"
+                class="header__nav-link"
+                >HÀNG MỚI</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/tui-xach.html"
+                class="header__nav-link"
+                >TÚI XÁCH</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/bop-vi.html"
+                class="header__nav-link"
+                >BÓP VÍ</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/balo.html"
+                class="header__nav-link"
+                >BALO</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/sale.html"
+                class="header__nav-link"
+                >SALE</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <div class="header__search">
+                <input
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Tìm kiếm"
+                />
+                <i class="fa-solid fa-magnifying-glass header__icon"></i>
+              </div>
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-item-link"
+                href="http://127.0.0.1:5500/pages/dang-nhap.html"
+                ><i class="fa-solid fa-user header__icon"></i
+              ></a>
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-item-link"
+                href="http://127.0.0.1:5500/pages/gio-hang.html"
+              >
+                <i class="fa-solid fa-cart-plus header__icon"></i
+              ></a>
+            </li>
+          </ul>
+
+          <label for="nav-mobile-input" class="nav__bars-btn">
+            <i class="fa-solid fa-bars header__icon header__icon-menu"></i>
+          </label>
+
+          <input
+            type="checkbox"
+            hidden
+            class="nav-input"
+            id="nav-mobile-input"
+          />
+
+          <label for="nav-mobile-input" class="header__nav-overlay"></label>
+
+          <ul class="header__nav-mobile">
+            <label
+              for="nav-mobile-input"
+              class="header__nav-btn-close header__icon"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="header__nav-mobile-box">
+              <li class="header__nav-mobile-search">
+                <div class="header__search-mobile">
+                  <input
+                    type="text"
+                    class="header__search-mobile-input"
+                    placeholder="Tìm kiếm"
+                  />
+                  <i
+                    class="fa-solid fa-magnifying-glass header__icon-mobile"
+                  ></i>
+                </div>
+              </li>
+
+              <li class="header__nav-mobile-item">
+                <a href="./pages/hang-moi.html" class="header__nav-mobile-link"
+                  >HÀNG MỚI</a
+                >
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">TÚI XÁCH</a>
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">BÓP VÍ</a>
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">BALO</a>
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">SALE</a>
+              </li>
+
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">ĐĂNG NHẬP</a>
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">GIỎ HÀNG</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <session class="session__slide">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img
+              class="slide__img"
+              src="./assets/img/banner.jpg"
+              style="width: 100%"
+            />
+            <div class="text">Let's Play</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              class="slide__img"
+              src="./assets/img/banner1.jpeg"
+              style="width: 100%"
+            />
+            <div class="text">Sale up to 40%</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              class="slide__img"
+              src="./assets/img/banner2.png"
+              style="width: 100%"
+            />
+            <div class="text">Túi xách hàng hiệu</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </session>
+
+      <div class="session__suggest session__product">
+        <div class="session__product-top">
+          <p class="session__product-title">HÀNG MỚI VỀ</p>
+          <p class="session__products-info">
+            Các sản phẩm bắt kịp xu hướng, nàng thời thượng không nên bỏ lỡ
+          </p>
+        </div>
+        <div class="session__product-box">
+          <div class="session__products-bag">
+            <img
+              src="./assets/img/product1.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="session__product-text">
+              <p class="session__product-name">TREND</p>
+              <p class="session__product-des">Cập nhật những mẫu mới nhất</p>
+            </div>
+            <div class="session__product-btn">
+              <a
+                href="http://127.0.0.1:5500/pages/chi-tiet.html"
+                class="session__product-link"
+              >
+                XEM NGAY
+              </a>
+            </div>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="./assets/img/product2.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="session__product-text">
+              <p class="session__product-name">BÓP VÍ</p>
+              <p class="session__product-des">
+                Tiện dụng, đựng được tiền,thẻ,giấy tờ
+              </p>
+            </div>
+            <div class="session__product-btn">
+              <a
+                href="http://127.0.0.1:5500/pages/chi-tiet.html"
+                class="session__product-link"
+              >
+                XEM NGAY
+              </a>
+            </div>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="./assets/img/product3.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="session__product-text">
+              <p class="session__product-name">BALO</p>
+              <p class="session__product-des">
+                Màu sắc và kiểu dáng đơn giản luôn hợp mốt
+              </p>
+            </div>
+            <div class="session__product-btn">
+              <a
+                href="http://127.0.0.1:5500/pages/chi-tiet.html"
+                class="session__product-link"
+              >
+                XEM NGAY
+              </a>
+            </div>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="./assets/img/product4.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="session__product-text">
+              <p class="session__product-name">ACCESSORIES</p>
+              <p class="session__product-des">
+                Đa dạng cập nhập theo xu hướng mới nhất
+              </p>
+            </div>
+            <div class="session__product-btn">
+              <a
+                href="http://127.0.0.1:5500/pages/chi-tiet.html"
+                class="session__product-link"
+              >
+                XEM NGAY
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="session__product">
+        <div class="session__product-top">
+          <h3 class="session__product-title">GỢI Ý CHO RIÊNG BẠN</h3>
+        </div>
+
+        <div class="session__product-box">
+          <div class="session__products-bag">
+            <img
+              src="./assets/img/trang-chu-bag-1.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">Túi xách nhỏ Sun - Moon</p>
+            </div>
+            <p class="session__product-price product__des-center">795,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="./assets/img/trang-chu-bag-2.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">
+                Túi Xách Nhỏ Trang Trí Logo Cách Điệu
+              </p>
+            </div>
+            <p class="session__product-price product__des-center">695,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="./assets/img/trang-chu-bag-3.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">
+                Túi Dập Hiệu Ứng Princess Diamond
+              </p>
+            </div>
+            <p class="session__product-price product__des-center">795,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="./assets/img/trang-chu-bag-4.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">Ví Nắp Cách Điệu Kèm Dây</p>
+            </div>
+            <p class="session__product-price product__des-center">500,000đ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="session__instagram session__product">
+        <div class="session__product-top">
+          <h3 class="session__product-title">INSTAGRAM</h3>
+          <p class="session__products-info">@mika.vn</p>
+          <div class="session__product-box">
+            <div class="session__products-bag">
+              <img
+                src="./assets/img/trang-chu-ins-1.png"
+                alt=""
+                class="session__product-img"
+              />
+            </div>
+            <div class="session__products-bag">
+              <img
+                src="./assets/img/trang-chu-ins-2.png"
+                alt=""
+                class="session__product-img"
+              />
+            </div>
+
+            <div class="session__products-bag">
+              <img
+                src="./assets/img/trang-chu-ins-3.png"
+                alt=""
+                class="session__product-img"
+              />
+            </div>
+
+            <div class="session__products-bag">
+              <img
+                src="./assets/img/trang-chu-ins-4.png"
+                alt=""
+                class="session__product-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer-1 footer__col">
+          <div class="footer-1__content">
+            <p class="footer__content-title">NHẬN THÔNG BÁO MỚI NHẤT</p>
+            <p class="footer__content-des">
+              Đăng ký email - Bạn sẽ là người đầu tiên biết về hàng mới, ưu đãi
+              chỉ dành cho thành viên và nhận giảm giá 10% cho đơn hàng đầu tiên
+              cảu mình tại MIKA.VN
+            </p>
+            <input
+              class=""
+              footer-1__content-input
+              type="text"
+              placeholder="Nhập email của bạn"
+            />
+            <a class="footer-1__content-register" href="">ĐĂNG KÝ</a>
+          </div>
+        </div>
+
+        <div class="footer-2 footer__col">
+          <p class="footer__content-title">LIÊN HỆ</p>
+          <div class="footer__content-des">
+            Xin vui lòng xem các hướng dẫn, trợ giúp, hỗ trợ gặp tại <br />
+            Câu hỏi thường gặp. Hoặc liên hệ nhanh với MiKa tại:<br />
+            Dịch vụ khách hàng<br />
+            <i class="fa-solid fa-phone footer__icon"></i>
+            (028)6-222-1688 - 0938 6445 86<br />
+            <i class="fa-solid fa-clock footer__icon"></i>
+            Mon-Sun: 9:00 am - 21:30 pm <br />
+            <i class="fa-solid fa-envelope footer__icon"></i>
+            Liên lạc qua email<br />
+          </div>
+
+          <div class="footer-2__connect">
+            <div class="footer-2__connect-mxh">
+              <span>KẾT NỐI CÙNG MIKA</span>
+              <i class="fa-brands fa-facebook-f footer__icon"></i>
+              <i class="fa-brands fa-instagram footer__icon"></i>
+              <i class="fa-brands fa-pinterest footer__icon"></i>
+              <i class="fa-brands fa-youtube footer__icon"></i>
+            </div>
+            <div class="footer-2__connect__addr">
+              <p>
+                <strong>Đia chỉ: </strong>
+                68 Hoàng Đạo Thúy, Nhân Chính, Thanh Xuân, Hà Nội
+              </p>
+              <p><strong>Email: </strong> info@mika.vn</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-3 footer__col">
+          <p class="footer__content-title">HỖ TRỢ KHÁCH HÀNG</p>
+          <a href="" class="footer__content-text-link">GIỚI THIỆU MIKA.VN</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH KIỂM HÀNG</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH ĐỔI TRẢ</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH BẢO MẬT</a>
+          <a href="" class="footer__content-text-link">KHÁCH HÀNG THÂN THIẾT</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH VẬN CHUYỂN</a>
+          <a href="" class="footer__content-text-link"
+            >ĐIỀU KHOẢN VÀ ĐIỀU KIỆN</a
+          >
+          <a href="" class="footer__content-text-link">CÁCH THỨC THANH TOÁN</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH BẢO HÀNH</a>
+          <a href="" class="footer__content-text-link">TUYỂN DỤNG</a>
+        </div>
+        <div class="footer-4 footer__col">
+          <p class="footer__content-title">TÀI KHOẢN CỦA BẠN</p>
+          <a href="" class="footer__content-text-link">TÀI KHOẢN</a>
+          <a href="" class="footer__content-text-link">DANH SÁCH ƯA THÍCH</a>
+          <a href="" class="footer__content-text-link">LỊCH SỬ ĐƠN HÀNG</a>
+          <a href="" class="footer__content-text-link"
+            >XEM TRẠNG THÁI ĐƠN HÀNG</a
+          >
+          <a href="" class="footer__content-text-link">QUÊN MẬT KHẨU</a>
+          <a href="" class="footer__content-text-link"
+            >ĐỔI THÔNG TIN TÀI KHOẢN</a
+          >
+          <a href="" class="footer__content-text-link"
+            ><img class="footer-logo" src="../assets//img/logo-bct.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="btn__go-to-top">
+      <i class="fa-solid fa-chevron-up btn__go-to-top-icon"></i>
+    </div>
+
+    <script type="text/javascript">
+      var currentLocation = location.href;
+      const menuItem = document.querySelectorAll('.header__nav-link');
+      const menuLength = menuItem.length;
+      for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currentLocation) {
+          menuItem[i].className = 'header__nav-link active';
+        }
+      }
+
+      const scrollBtn = document.querySelector('.btn__go-to-top');
+      function refreshBtn() {
+        if (document.documentElement.scrollTop <= 150) {
+          scrollBtn.style.display = 'none';
+        } else {
+          scrollBtn.style.display = 'flex';
+        }
+      }
+      refreshBtn();
+      scrollBtn.addEventListener('click', function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+
+      document.addEventListener('scroll', function () {
+        refreshBtn();
+      });
+    </script>
+    <script type="text/javascript" src="./main.js" />
+  </body>
+</html>

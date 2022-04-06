@@ -1,0 +1,17 @@
+:root {
+  --black-color: #000;
+  --light-color: #fff;
+  --text-color: #333;
+  --primary-color: #f53f2d;
+}
+
+* {
+  box-sizing: initial;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  box-sizing: border-box;
+}

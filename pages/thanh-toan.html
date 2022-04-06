@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Toán</title>
+
+    <link
+      rel="stylesheet"
+      href="../assets//fonts/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <link rel="stylesheet" href="../assets/css/payment.css" />
+  </head>
+  <body>
+    <div class="payment">
+      <div class="payment-left">
+        <div class="payment-left-content">
+          <div class="payment-left__img">
+            <img
+              src="../assets//img/logo.png"
+              alt=""
+              class="payment-left__logo"
+            />
+          </div>
+          <div class="payment-left__nav-box">
+            <span class="payment-left__nav"> Giỏ hàng > </span>
+            <span class="payment-left__nav payment-left__nav-color">
+              Thông tin đơn hàng
+            </span>
+          </div>
+
+          <h4 class="payment-left__heading">Thông tin đơn hàng</h4>
+
+          <div class="payment-left__form">
+            <input
+              type="text"
+              class="payment-left__inp payment-left__field"
+              placeholder="Họ và tên"
+            />
+            <div class="payment-left__box-form">
+              <input
+                type="text"
+                class="payment-left__inp payment-left__field"
+                placeholder="Email"
+              />
+
+              <input
+                type="text"
+                class="payment-left__inp payment-left__field"
+                placeholder="Số điện thoại"
+              />
+            </div>
+
+            <input
+              type="text"
+              class="payment-left__inp payment-left__field"
+              placeholder="Địa chỉ"
+            />
+
+            <div class="payment-left__box-form">
+              <select
+                name=""
+                id=""
+                class="payment-left__inp-city payment-left__field"
+              >
+                <option value="" class="payment-left__inp-city-o">
+                  Chọn Tỉnh/Thành
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Hà Nội
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Đà Nẵng
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Hồ Chí Minh
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Hải Phòng
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Cà Mau
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Phú Thọ
+                </option>
+              </select>
+
+              <select
+                name=""
+                id=""
+                class="payment-left__inp-city payment-left__field"
+              >
+                <option value="" class="payment-left__inp-city-o">
+                  Chọn Quận/Huyện
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Hoài Đức
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Cầu Giấy
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Hoàng Mai
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Đinh Công
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Cầu Diễn
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Ba Đình
+                </option>
+              </select>
+
+              <select
+                name=""
+                id=""
+                class="payment-left__inp-city payment-left__field"
+              >
+                <option value="" class="payment-left__inp-city-o">
+                  Chọn Phường/Xã
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Đức Thượng
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Minh Khai
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Di Trạch
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Đức Giang
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Cát Quế
+                </option>
+                <option value="" class="payment-left__inp-city-o">
+                  Kim Chung
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="payment-left__method">
+            <p class="payment-left__left__method-text">
+              Phương thức vận chuyển
+            </p>
+            <div class="payment-left__box-border">
+              <i class="fa-solid fa-box-open payment-left__box-ship-icon"></i>
+            </div>
+          </div>
+
+          <div class="payment-left__method">
+            <p class="payment-left__left__method-text">
+              Phương thức thanh toán
+            </p>
+            <div class="payment-left__box-border">
+              <div class="payment-left__select-pay">
+                <input type="radio" class="payment-left__select-radio" />
+                <img src="../assets/img/thanh toan-1.png" alt="" />
+                <label class="payment-left__method-pay">Ví ZaloPay</label>
+              </div>
+              <div class="payment-left__select-pay">
+                <input type="radio" class="payment-left__select-radio" />
+                <img src="../assets/img/thanh toan-4.png" alt="" />
+                <label class="payment-left__method-pay"
+                  >Chuyển khoản qua ngân hàng</label
+                >
+              </div>
+              <div class="payment-left__select-pay">
+                <input type="radio" class="payment-left__select-radio" />
+                <img src="../assets/img/thanh toan-5.png" alt="" />
+                <label class="payment-left__method-pay"
+                  >Thanh toán khi nhận hàng</label
+                >
+              </div>
+              <div class="payment-left__select-pay">
+                <input type="radio" class="payment-left__select-radio" />
+                <img src="../assets/img/thanh toan-6.png" alt="" />
+                <label class="payment-left__method-pay">Ví ShopeePay</label>
+              </div>
+              <div class="payment-left__select-pay">
+                <input type="radio" class="payment-left__select-radio" />
+                <img src="../assets/img/thanh toan-3.png" alt="" />
+                <label class="payment-left__method-pay">Ví Momo</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-left__box-btn-success">
+            <div class="payment-left__btn-success">
+              <a href="" class="payment-left__btn-success-link"
+                >Hoàn tất đơn hàng</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment-right">
+        <div class="payment-right__content">
+          <div class="payment-right__info-product">
+            <img
+              src="../assets/img/thanh toan-2.png"
+              alt=""
+              class="payment-right__img"
+            />
+            <div class="payment-right__info-box-name">
+              <p class="payment-right__info-product-text">
+                Túi xách nhỏ Double - Handle satchel Hồng
+              </p>
+              <p class="payment-right__info-product-text">780,000đ</p>
+            </div>
+          </div>
+
+          <div class="payment-right__total-product">
+            <p class="payment-right__info-title">Giao hàng tiêu chuẩn</p>
+            <div class="payment-right__info-product-sub">
+              <p class="payment-right__info-product-text">Tổng cộng</p>
+              <p class="payment-right__info-product-text">780,000đ</p>
+            </div>
+          </div>
+
+          <div class="payment-right__total-product">
+            <div class="payment-right__info-product-sub">
+              <p class="payment-right__info-product-text">Tạm tính</p>
+              <p class="payment-right__info-product-text">780,000đ</p>
+            </div>
+            <div class="payment-right__info-product-sub">
+              <p class="payment-right__info-product-text">Phí vận chuyển</p>
+              <p class="payment-right__info-product-text">0đ</p>
+            </div>
+          </div>
+
+          <div class="payment-right__total-product">
+            <p class="payment-right__info-title">Giao hàng tiêu chuẩn</p>
+            <div class="payment-right__info-product-sub">
+              <p class="payment-right__info-title">Tổng cộng</p>
+              <p class="payment-right__info-title">
+                <span>VND </span> 780,000đ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

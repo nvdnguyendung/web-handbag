@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bóp Ví</title>
+
+    <link
+      rel="stylesheet"
+      href="../assets//fonts/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/product.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="http://127.0.0.1:5500/" class="header__logo">
+          <img src="../assets//img/logo.png" alt="" />
+        </a>
+        <div class="header__nav">
+          <ul class="header__nav-list header__nav-pc">
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/hang-moi.html"
+                class="header__nav-link"
+                >HÀNG MỚI</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/tui-xach.html"
+                class="header__nav-link"
+                >TÚI XÁCH</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/bop-vi.html"
+                class="header__nav-link"
+                >BÓP VÍ</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/balo.html"
+                class="header__nav-link"
+                >BALO</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="http://127.0.0.1:5500/pages/sale.html"
+                class="header__nav-link"
+                >SALE</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <div class="header__search">
+                <input
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Tìm kiếm"
+                />
+                <i class="fa-solid fa-magnifying-glass header__icon"></i>
+              </div>
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-item-link"
+                href="http://127.0.0.1:5500/pages/dang-nhap.html"
+                ><i class="fa-solid fa-user header__icon"></i
+              ></a>
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-item-link"
+                href="http://127.0.0.1:5500/pages/gio-hang.html"
+              >
+                <i class="fa-solid fa-cart-plus header__icon"></i
+              ></a>
+            </li>
+          </ul>
+
+          <label for="nav-mobile-input" class="nav__bars-btn">
+            <i class="fa-solid fa-bars header__icon header__icon-menu"></i>
+          </label>
+
+          <input
+            type="checkbox"
+            hidden
+            class="nav-input"
+            id="nav-mobile-input"
+          />
+
+          <label for="nav-mobile-input" class="header__nav-overlay"></label>
+
+          <ul class="header__nav-mobile">
+            <label
+              for="nav-mobile-input"
+              class="header__nav-btn-close header__icon"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="header__nav-mobile-box">
+              <li class="header__nav-mobile-search">
+                <div class="header__search-mobile">
+                  <input
+                    type="text"
+                    class="header__search-mobile-input"
+                    placeholder="Tìm kiếm"
+                  />
+                  <i
+                    class="fa-solid fa-magnifying-glass header__icon-mobile"
+                  ></i>
+                </div>
+              </li>
+
+              <li class="header__nav-mobile-item">
+                <a href="./pages/hang-moi.html" class="header__nav-mobile-link"
+                  >HÀNG MỚI</a
+                >
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">TÚI XÁCH</a>
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">BÓP VÍ</a>
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">BALO</a>
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">SALE</a>
+              </li>
+
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">ĐĂNG NHẬP</a>
+              </li>
+              <li class="header__nav-mobile-item">
+                <a href="" class="header__nav-mobile-link">GIỎ HÀNG</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="session__product-top">
+        <h3 class="session__product-title mt-16">VÍ CẦM TAY</h3>
+      </div>
+
+      <div class="new-product-container session__product">
+        <div class="new-product__feature">
+          <div class="new-product__feature-box">
+            <span class="new-product__feature-text"> Bộ lọc </span>
+            <select class="new-product__feature-sec" name="" id="">
+              <i class="fa-solid fa-angle-down"></i>
+              <option value="">Loại túi xách</option>
+              <option value="">Túi xách nhỏ</option>
+              <option value="">Túi xách trung</option>
+              <option value="">Túi xách lớn</option>
+            </select>
+          </div>
+          <div class="new-product__feature-box">
+            <span class="new-product__feature-text">
+              Sắp xếp theo: Tùy chọn
+            </span>
+            <select class="new-product__feature-sec" name="" id="">
+              <i class="fa-solid fa-angle-down"></i>
+              <option value="">Bán chạy</option>
+              <option value="">Giá tăng dần</option>
+              <option value="">Giá giảm dần</option>
+              <option value="">Từ A - Z</option>
+              <option value="">Từ Z - A</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="session__product-box mt-3">
+          <div class="session__products-bag">
+            <img
+              src="../assets/img/bop-vi-2.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">Ví Ngắn Nữ Gấp Đôi Phói Da Vân</p>
+            </div>
+            <p class="session__product-price product__des-center">99,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="../assets/img/bop-vi-3.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">
+                Ví Dài Cầm Tay Classic Modem...
+              </p>
+            </div>
+            <p class="session__product-price product__des-center">245,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="../assets/img/bop-vi-13.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">Ví Cầm Tay Phối Màu Size nhỏ</p>
+            </div>
+            <p class="session__product-price product__des-center">149,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="../assets/img/bop-vi-4.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">
+                Ví Cầm Tay Dây Kéo Classic Modem
+              </p>
+            </div>
+            <p class="session__product-price product__des-center">245,000đ</p>
+          </div>
+        </div>
+
+        <div class="session__product-box new-product__gird mt-3">
+          <div class="session__product-box-left scale-animation">
+            <img src="../assets/img/bop-vi-1.png" alt="" />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">Ví Nắp Gập Găn Khóa Trang Trí</p>
+            </div>
+            <p class="session__product-price product__des-center">544,000đ</p>
+          </div>
+
+          <div class="session__product-box-right">
+            <div class="new-product-col scale-animation">
+              <img
+                src="../assets/img/bop-vi-6.png"
+                alt=""
+                class="session__product-img"
+              />
+              <div class="product__box-select-color">
+                <div
+                  class="product__select-color--black product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--e5d0c5 product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--ccd9ce product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--e2cbc0 product__select-color"
+                ></div>
+              </div>
+              <div class="product__des-center">
+                <p class="session__product-des">Ví Cầm Tay Classic & Modem</p>
+              </div>
+              <p class="session__product-price product__des-center">235,000đ</p>
+            </div>
+
+            <div class="new-product-col scale-animation">
+              <img
+                src="../assets/img/bop-vi-5.png"
+                alt=""
+                class="session__product-img"
+              />
+              <div class="product__box-select-color">
+                <div
+                  class="product__select-color--black product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--e5d0c5 product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--ccd9ce product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--e2cbc0 product__select-color"
+                ></div>
+              </div>
+              <div class="product__des-center">
+                <p class="session__product-des">Ví Cầm Tay Classic Style</p>
+              </div>
+              <p class="session__product-price product__des-center">245,000đ</p>
+            </div>
+
+            <div class="new-product-col scale-animation">
+              <img
+                src="../assets/img/bop-vi-7.png"
+                alt=""
+                class="session__product-img"
+              />
+              <div class="product__box-select-color">
+                <div
+                  class="product__select-color--black product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--e5d0c5 product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--ccd9ce product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--e2cbc0 product__select-color"
+                ></div>
+              </div>
+              <div class="product__des-center">
+                <p class="session__product-des">Ví Cầm Tay Bìa Thư</p>
+              </div>
+              <p class="session__product-price product__des-center">235,000đ</p>
+            </div>
+
+            <div class="new-product-col scale-animation">
+              <img
+                src="../assets/img/bop-vi-8.png"
+                alt=""
+                class="session__product-img"
+              />
+              <div class="product__box-select-color">
+                <div
+                  class="product__select-color--black product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--e5d0c5 product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--ccd9ce product__select-color"
+                ></div>
+                <div
+                  class="product__select-color--e2cbc0 product__select-color"
+                ></div>
+              </div>
+              <div class="product__des-center">
+                <p class="session__product-des">Ví Mini Vân Da Box</p>
+              </div>
+              <p class="session__product-price product__des-center">285,000đ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session__product-box mt-3">
+          <div class="session__products-bag">
+            <img
+              src="../assets/img/bop-vi-9.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">Ví Form Dài Full Box</p>
+            </div>
+            <p class="session__product-price product__des-center">345,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="../assets/img/bop-vi-11.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">
+                Clutch Dự Tiệc Form Chữ Nhật...
+              </p>
+            </div>
+            <p class="session__product-price product__des-center">395,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="../assets/img/bop-vi-10.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">Ví Dự Tiệc Hoa Đá</p>
+            </div>
+            <p class="session__product-price product__des-center">435,000đ</p>
+          </div>
+
+          <div class="session__products-bag">
+            <img
+              src="../assets/img/bop-vi-12.png"
+              alt=""
+              class="session__product-img"
+            />
+            <div class="product__box-select-color">
+              <div
+                class="product__select-color--black product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e5d0c5 product__select-color"
+              ></div>
+              <div
+                class="product__select-color--ccd9ce product__select-color"
+              ></div>
+              <div
+                class="product__select-color--e2cbc0 product__select-color"
+              ></div>
+            </div>
+            <div class="product__des-center">
+              <p class="session__product-des">
+                Clutch Đính Đá - Ngọc Trai Thanh...
+              </p>
+            </div>
+            <p class="session__product-price product__des-center">445,000đ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer-1 footer__col">
+          <div class="footer-1__content">
+            <p class="footer__content-title">NHẬN THÔNG BÁO MỚI NHẤT</p>
+            <p class="footer__content-des">
+              Đăng ký email - Bạn sẽ là người đầu tiên biết về hàng mới, ưu đãi
+              chỉ dành cho thành viên và nhận giảm giá 10% cho đơn hàng đầu tiên
+              cảu mình tại MIKA.VN
+            </p>
+            <input
+              class=""
+              footer-1__content-input
+              type="text"
+              placeholder="Nhập email của bạn"
+            />
+            <a class="footer-1__content-register" href="">ĐĂNG KÝ</a>
+          </div>
+        </div>
+
+        <div class="footer-2 footer__col">
+          <p class="footer__content-title">LIÊN HỆ</p>
+          <div class="footer__content-des">
+            Xin vui lòng xem các hướng dẫn, trợ giúp, hỗ trợ gặp tại <br />
+            Câu hỏi thường gặp. Hoặc liên hệ nhanh với MiKa tại:<br />
+            Dịch vụ khách hàng<br />
+            <i class="fa-solid fa-phone footer__icon"></i>
+            (028)6-222-1688 - 0938 6445 86<br />
+            <i class="fa-solid fa-clock footer__icon"></i>
+            Mon-Sun: 9:00 am - 21:30 pm <br />
+            <i class="fa-solid fa-envelope footer__icon"></i>
+            Liên lạc qua email<br />
+          </div>
+
+          <div class="footer-2__connect">
+            <div class="footer-2__connect-mxh">
+              <span>KẾT NỐI CÙNG MIKA</span>
+              <i class="fa-brands fa-facebook-f footer__icon"></i>
+              <i class="fa-brands fa-instagram footer__icon"></i>
+              <i class="fa-brands fa-pinterest footer__icon"></i>
+              <i class="fa-brands fa-youtube footer__icon"></i>
+            </div>
+            <div class="footer-2__connect__addr">
+              <p>
+                <strong>Đia chỉ: </strong>
+                68 Hoàng Đạo Thúy, Nhân Chính, Thanh Xuân, Hà Nội
+              </p>
+              <p><strong>Email: </strong> info@mika.vn</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-3 footer__col">
+          <p class="footer__content-title">HỖ TRỢ KHÁCH HÀNG</p>
+          <a href="" class="footer__content-text-link">GIỚI THIỆU MIKA.VN</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH KIỂM HÀNG</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH ĐỔI TRẢ</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH BẢO MẬT</a>
+          <a href="" class="footer__content-text-link">KHÁCH HÀNG THÂN THIẾT</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH VẬN CHUYỂN</a>
+          <a href="" class="footer__content-text-link"
+            >ĐIỀU KHOẢN VÀ ĐIỀU KIỆN</a
+          >
+          <a href="" class="footer__content-text-link">CÁCH THỨC THANH TOÁN</a>
+          <a href="" class="footer__content-text-link">CHÍNH SÁCH BẢO HÀNH</a>
+          <a href="" class="footer__content-text-link">TUYỂN DỤNG</a>
+        </div>
+        <div class="footer-4 footer__col">
+          <p class="footer__content-title">TÀI KHOẢN CỦA BẠN</p>
+          <a href="" class="footer__content-text-link">TÀI KHOẢN</a>
+          <a href="" class="footer__content-text-link">DANH SÁCH ƯA THÍCH</a>
+          <a href="" class="footer__content-text-link">LỊCH SỬ ĐƠN HÀNG</a>
+          <a href="" class="footer__content-text-link"
+            >XEM TRẠNG THÁI ĐƠN HÀNG</a
+          >
+          <a href="" class="footer__content-text-link">QUÊN MẬT KHẨU</a>
+          <a href="" class="footer__content-text-link"
+            >ĐỔI THÔNG TIN TÀI KHOẢN</a
+          >
+          <a href="" class="footer__content-text-link"
+            ><img class="footer-logo" src="../assets//img/logo-bct.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="btn__go-to-top">
+      <i class="fa-solid fa-chevron-up btn__go-to-top-icon"></i>
+    </div>
+
+    <script type="text/javascript">
+      var currentLocation = location.href;
+      const menuItem = document.querySelectorAll('.header__nav-link');
+      const menuLength = menuItem.length;
+      for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currentLocation) {
+          menuItem[i].className = 'header__nav-link active';
+        }
+      }
+
+      const scrollBtn = document.querySelector('.btn__go-to-top');
+      function refreshBtn() {
+        if (document.documentElement.scrollTop <= 150) {
+          scrollBtn.style.display = 'none';
+        } else {
+          scrollBtn.style.display = 'flex';
+        }
+      }
+      refreshBtn();
+      scrollBtn.addEventListener('click', function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+
+      document.addEventListener('scroll', function () {
+        refreshBtn();
+      });
+    </script>
+  </body>
+</html>
