@@ -546,6 +546,7 @@
     </div>
 
     <script type="text/javascript">
+      // active item menu
       var currentLocation = location.href;
       const menuItem = document.querySelectorAll('.header__nav-link');
       const menuLength = menuItem.length;
@@ -555,7 +556,9 @@
         }
       }
 
+      // button go to top
       const scrollBtn = document.querySelector('.btn__go-to-top');
+
       function refreshBtn() {
         if (document.documentElement.scrollTop <= 150) {
           scrollBtn.style.display = 'none';
